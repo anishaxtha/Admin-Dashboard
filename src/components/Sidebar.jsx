@@ -1,22 +1,24 @@
 import React, { useState } from "react";
 import { FaRegUser } from "react-icons/fa6";
-import { FcSalesPerformance } from "react-icons/fc";
-import { IoMdAnalytics, IoMdHome, IoMdMenu } from "react-icons/io";
-import { IoCartOutline, IoSettingsSharp } from "react-icons/io5";
+import { IoMdMenu } from "react-icons/io";
+import { IoAnalytics, IoCartOutline, IoSettingsSharp } from "react-icons/io5";
 import { MdOutlineCategory } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+import { PiCurrencyDollarBold } from "react-icons/pi";
+import { GoHome } from "react-icons/go";
+
 const SIDEBAR_ITEMS = [
   {
     name: "Homepage",
-    icon: IoMdHome,
+    icon: GoHome,
     color: "#6366f1",
     path: "/",
   },
   {
     name: "Products",
-    icon: IoCartOutline,
+    icon: MdOutlineCategory,
     color: "#8B5CF6",
     path: "/products",
   },
@@ -28,19 +30,20 @@ const SIDEBAR_ITEMS = [
   },
   {
     name: "Sales",
-    icon: FcSalesPerformance,
+    icon: PiCurrencyDollarBold,
     color: "#10B981",
     path: "/sales",
   },
   {
     name: "Order",
-    icon: MdOutlineCategory,
+    icon: IoCartOutline,
     color: "#F59E0B",
     path: "/orders",
   },
   {
     name: "Analytics",
-    icon: IoMdAnalytics,
+    // icon: IoMdAnalytics,
+    icon: IoAnalytics,
     color: "#3B82F6",
     path: "/analytics",
   },
