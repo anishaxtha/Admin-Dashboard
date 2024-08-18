@@ -11,7 +11,7 @@ import { GoHome } from "react-icons/go";
 
 const SIDEBAR_ITEMS = [
   {
-    name: "Homepage",
+    name: "Overview",
     icon: GoHome,
     color: "#6366f1",
     path: "/",
