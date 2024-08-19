@@ -2,6 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import Sidebar from "./components/Sidebar";
+import UsersPage from "./pages/UsersPage";
+import SalesPage from "./pages/SalesPage";
+import AnalyticsPage from "./pages/AnalyticsPage";
+import SettingsPage from "./pages/SettingsPage";
 
 const App = () => {
   return (
@@ -19,6 +23,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="/sales" element={<SalesPage />} />
+        <Route path="/analytics" element={<AnalyticsPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
       </Routes>
     </div>
   );
