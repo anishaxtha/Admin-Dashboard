@@ -5,6 +5,8 @@ import { HiOutlineUsers } from "react-icons/hi";
 import { FiShoppingBag } from "react-icons/fi";
 import { BiSolidBarChartAlt2 } from "react-icons/bi";
 import { motion } from "framer-motion";
+import SalesOverviewChart from "../components/overview/SalesOverviewChart";
+import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 
 const HomePage = () => {
   return (
@@ -44,6 +46,12 @@ const HomePage = () => {
             color="#10B981"
           />
         </motion.div>
+
+        {/* CHARTS */}
+        <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
+          <SalesOverviewChart />
+          <CategoryDistributionChart />
+        </div>
       </main>
     </div>
   );
