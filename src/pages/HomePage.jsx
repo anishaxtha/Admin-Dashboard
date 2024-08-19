@@ -7,13 +7,14 @@ import { BiSolidBarChartAlt2 } from "react-icons/bi";
 import { motion } from "framer-motion";
 import SalesOverviewChart from "../components/overview/SalesOverviewChart";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
+import SalesChannelChart from "../components/overview/SalesChannelChart";
 
 const HomePage = () => {
   return (
     <div className="flex-1  overflow-auto relative z-10">
       <Header title="Overview" />
 
-      <main className="max-w-7xl mx-14  py-6  px-4  lg:px-8">
+      <main className="max-w-7xl mx-16  py-6  px-4  lg:px-8">
         {/* STATS */}
         <motion.div
           className="grid grid-cols-1 gap-5  sm:grid-cols-2 lg:grid-cols-4  mb-8"
@@ -51,6 +52,7 @@ const HomePage = () => {
         <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
           <SalesOverviewChart />
           <CategoryDistributionChart />
+          <SalesChannelChart />
         </div>
       </main>
     </div>
