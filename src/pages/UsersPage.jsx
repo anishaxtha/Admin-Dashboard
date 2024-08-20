@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import StatCard from "../components/common/StatCard";
 import { FaUserXmark } from "react-icons/fa6";
 import UsersTable from "../components/users/UsersTable";
+import UserActivityHeapMap from "../components/users/UserActivityHeapMap";
+import UserGrowthChat from "../components/users/UserGrowthChat";
+import UserDemographicChart from "../components/users/UserDemographicChart";
 
 const userStats = {
   totalUsers: 152845,
@@ -52,6 +55,13 @@ const UsersPage = () => {
         </motion.div>
 
         <UsersTable />
+
+        {/* CHARTS */}
+        <div className="grid grid-col-1 lg:grid-cols-2 gap-8">
+          <UserGrowthChat />
+          <UserActivityHeapMap />
+          <UserDemographicChart />
+        </div>
       </main>
     </div>
   );
