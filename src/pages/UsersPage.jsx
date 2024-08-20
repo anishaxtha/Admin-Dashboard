@@ -4,6 +4,7 @@ import { FaRegUser, FaUserCheck, FaUserPlus } from "react-icons/fa";
 import { motion } from "framer-motion";
 import StatCard from "../components/common/StatCard";
 import { FaUserXmark } from "react-icons/fa6";
+import UsersTable from "../components/users/UsersTable";
 
 const userStats = {
   totalUsers: 152845,
@@ -49,6 +50,8 @@ const UsersPage = () => {
             color="#10B981"
           />
         </motion.div>
+
+        <UsersTable />
       </main>
     </div>
   );
