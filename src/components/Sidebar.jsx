@@ -5,7 +5,6 @@ import { IoAnalytics, IoCartOutline, IoSettingsSharp } from "react-icons/io5";
 import { MdOutlineCategory } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 import { PiCurrencyDollarBold } from "react-icons/pi";
 import { GoHome } from "react-icons/go";
 
@@ -42,7 +41,6 @@ const SIDEBAR_ITEMS = [
   },
   {
     name: "Analytics",
-    // icon: IoMdAnalytics,
     icon: IoAnalytics,
     color: "#3B82F6",
     path: "/analytics",
