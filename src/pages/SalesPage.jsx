@@ -6,6 +6,8 @@ import { FaCreditCard, FaDollarSign } from "react-icons/fa";
 import { LuShoppingCart } from "react-icons/lu";
 import { IoIosTrendingUp } from "react-icons/io";
 import SalesOverviewChart from "../components/sales/SalesOverviewChart";
+import SalesByCategioryChart from "../components/sales/SalesByCategioryChart";
+import DailySalesTrend from "../components/sales/DailySalesTrend";
 
 const SALES_STATS = {
   totalRevenue: "$1,234,567",
@@ -54,7 +56,10 @@ const SalesPage = () => {
         {/* CHARTS */}
         <SalesOverviewChart />
 
-        <div className="grid grid-col-1 lg:grid-cols-2 gap-8"></div>
+        <div className="grid grid-col-1 lg:grid-cols-2 gap-8">
+          <SalesByCategioryChart />
+          <DailySalesTrend />
+        </div>
       </main>
     </div>
   );
