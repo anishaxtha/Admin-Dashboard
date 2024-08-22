@@ -7,6 +7,7 @@ import { FaRegClock } from "react-icons/fa";
 import { LuDollarSign } from "react-icons/lu";
 import DailyOrders from "../components/orders/DailyOrders";
 import OrderDistribution from "../components/orders/OrderDistribution";
+import OrderTable from "../components/orders/OrderTable";
 
 const ORDER_STATS = {
   totalOrders: "2,345",
@@ -53,10 +54,11 @@ const OrdersPage = () => {
           />
         </motion.div>
 
-        <div className="grid grid-col-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-col-1 lg:grid-cols-2 gap-8 mb-8">
           <OrderDistribution />
           <DailyOrders />
         </div>
+        <OrderTable />
       </main>
     </div>
   );
