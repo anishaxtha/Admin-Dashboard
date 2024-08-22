@@ -88,7 +88,7 @@ const OrderTable = () => {
         <div className="relative">
           <input
             type="text"
-            placeholder="Search products..."
+            placeholder="Search orders..."
             className="bg-gray-700 text-white placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             value={searchTerm}
             onChange={handleSearch}
@@ -149,7 +149,7 @@ const OrderTable = () => {
                         ? "bg-green-100  text-green-800"
                         : order.status === "Processing"
                         ? "bg-yellow-100 text-yellow-500"
-                        : order.status === "Shipped "
+                        : order.status === "Shipped"
                         ? "bg-blue-100 text-blue-800"
                         : "bg-red-100 text-red-800"
                     }`}
