@@ -31,7 +31,7 @@ const CustomerSegmentation = () => {
       <h2 className="text-xl font-semibold text-gray-100 mb-4">
         Customer Segmentation
       </h2>
-      <div style={{ width: "100%", height: 300 }}>
+      <div className="w-full h-[300px]">
         <ResponsiveContainer>
           <RadarChart
             cx="50%"
